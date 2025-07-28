@@ -1,0 +1,22 @@
+meta {
+  name: Github - Exchange Code for Access_Token
+  type: http
+  seq: 1
+}
+
+post {
+  url: https://github.com/login/oauth/access_token
+  body: formUrlEncoded
+  auth: inherit
+}
+
+headers {
+  Content-Type: application/x-www-form-urlencoded
+  Accept: application/json
+}
+
+body:form-urlencoded {
+  client_secret: d3ba69ba5e14019c697eb5807f0f4a6ad8db2c26
+  client_id: Ov23lia7BlcoWecIajhD
+  code: 7889d55b58771e1de9c8
+}

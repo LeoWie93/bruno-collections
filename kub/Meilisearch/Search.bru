@@ -1,0 +1,32 @@
+meta {
+  name: Search
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{meili_host}}/indexes/rundgang-dev-articles/search
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "q": "Corona auswirkungen",
+    "page": 1,
+    "hitsPerPage": 6,  
+    "attributesToSearchOn": [
+      "title",
+      "subtitle",
+      "articleLead",
+      "teaserText",
+      "body"
+    ],
+    "attributesToRetrieve":[
+      "title",
+      "headerImage",
+      "teaserText",
+      "body"
+    ]
+  }
+}

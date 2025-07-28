@@ -1,0 +1,22 @@
+meta {
+  name: Set Synonyms
+  type: http
+  seq: 1
+}
+
+put {
+  url: {{meili_host}}/indexes/rundgang-dev-articles/settings/synonyms
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+      "Corona": [
+        "Coronazeit"
+      ],
+      "Coronazeit": [
+        "Corona"
+      ]
+  }
+}

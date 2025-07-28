@@ -1,0 +1,38 @@
+meta {
+  name: Create Documents (push data)
+  type: http
+  seq: 2
+}
+
+post {
+  url: {{meili_host}}/indexes/rundgang-dev-articles/documents
+  body: json
+  auth: none
+}
+
+body:json {
+  [
+    {
+      "id": 200,
+      "title": "Theater und Sprache: gut kombiniert",
+      "headerImage": "https://image.tmdb.org/t/p/w1280/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+      "subtitle": "Die Sprachstarken",
+      "articleLead": "«Die Sprachstarken» einmal anders erleben: «Die Ideenreichen» ermöglichen einen kreativ-spielenden Zugang zum Lehrmittel und verbinden das Fach Deutsch mit Theaterpädagogik. Eine Entwicklung der Pädagogischen Hochschule Luzern, die neue Möglichkeiten schafft.",
+      "teaserText":"«Die Sprachstarken» einmal anders erleben: «Die Ideenreichen» ermöglichen einen kreativ-spielenden Zugang zum Lehrmittel und verbinden das Fach Deutsch mit Theaterpädagogik. Eine Entwicklung der Pädagogischen Hochschule Luzern, die neue Möglichkeiten schafft.",
+      "authors": "Pamela Nussbaumer, Leonardo Wiedemeier",
+      "body": "Was seinen Ursprung in der Coronazeit hatte, ist zu einem ausgewachsenen Projekt geworden: «Die Ideenreichen», eine Anreicherung zum Deutschlehrmittel «Die Sprachstarken», entwickelt vom Zentrum Theaterpädagogik der Pädagogischen Hochschule Luzern. Die Begleithefte regen Kinder wie Lehrpersonen dazu an, einen bewegten und ganzheitlichen Unterricht zu erleben. Dabei werden Spiele, Übungen und Unterrichtsideen vermittelt. Alisha Spring, ausgebildete Theaterpädagogin und zuvor neun Jahre als Primarlehrerin in der 5. und 6. Klasse tätig, ist seit einem Jahr für das Projekt verantwortlich. Beim gemeinsamen Gespräch erfahren wir mehr darüber.",
+      "release_date": "2024-02-22"
+    },
+    {
+      "id": 300,
+      "title": "Hausaufgaben - ja oder nein?",
+      "headerImage": "https://image.tmdb.org/t/p/w1280/xnopI5Xtky18MPhK40cZAGAOVeV.jpg",
+      "subtitle": "Pro & Kontra",
+      "articleLead": "Sind Hausaufgaben sinnvoll oder nicht? An dieser Frage scheiden sich die Geister. Wir haben zwei Schulleiter nach ihrer Meinung gefragt: Philipp Apafi erläutert, warum Hausaufgaben unbedingt beibehalten werden müssen. Und Markus Buholzer begründet, warum sie in Kriens abgeschafft wurden.",
+      "teaserText":"Sind Hausaufgaben sinnvoll oder nicht? An dieser Frage scheiden sich die Geister. Wir haben zwei Schulleiter nach ihrer Meinung gefragt: Philipp Apafi erläutert, warum Hausaufgaben unbedingt beibehalten werden müssen. Und Markus Buholzer begründet, warum sie in Kriens abgeschafft wurden.",
+      "authors": "Pamela Nussbaumer",
+      "body": "Pro Philipp Apafi, Schulleiter Primarschule Zumikon Hausaufgaben? Wenn sie nicht längst fester Bestandteil des Schulalltages wären, spätestens mit der Einführung des neuen Lehrplans 21 müssten sie schleunigst erfunden werden! Aber der Reihe nach. Unter Hausaufgaben versteht man schulische Aufgaben und Arbeiten, die sich aus dem Unterrichtsgeschehen ergeben und zuhause erledigt werden sollen. Sie geben den Schülerinnen und Schülern die Gelegenheit, das Verständnis für Gelerntes zu vertiefen, zum Einüben oder Auswendiglernen. Während bei jüngeren Kindern der Unterstufe die Wirkung von Hausaufgaben für den Lernerfolg noch gering ist, so nimmt deren Bedeutung für die Schulleistung ab der Mittel- und Oberstufe sowie an weiterführenden Schulen stetig zu.",
+      "release_date": "2024-02-22"
+    }
+  ]
+}

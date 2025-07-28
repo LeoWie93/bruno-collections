@@ -1,0 +1,19 @@
+meta {
+  name: Create Index
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{meili_host}}/indexes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "uid": "rundgang-dev-articles",
+    "primaryKey": "id"
+  }
+  
+}
